@@ -1,0 +1,167 @@
+body{
+    background-color: rgba(65, 45, 25, 255);
+}
+
+.coa{
+    width: 25%;
+    height: auto;
+    min-width: none;
+}
+
+.header {
+    background-color: rgba(67, 97, 54, 255);
+}
+
+.global-nav{
+    width: 100%;
+}
+
+.hero {
+    background-color: rgba(168, 135, 93, 255);
+    margin: 10px;
+    border-radius: 20px;;
+}
+
+.hero:hover > :not(:hover){
+    opacity: 0.5;
+}
+
+
+.body {
+    background-color: rgba(168, 135, 93, 255);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    background: rgba(67, 97, 54, 255);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.promo1{
+    display: flex;
+    align-items: center;
+}
+
+.promo2{
+    background-color: red;
+}
+
+.promo3{
+    background-color: fuchsia;
+    display:none;
+}
+
+.photo{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.highlight{
+    display: grid;
+    margin-bottom: 10px;
+    padding: 5px;
+    justify-items: center;
+    border-radius: 20px;
+    transition: opacity, background-color 0.75s ease;
+}
+
+.highlight:hover{
+    background-color: rgb(197, 174, 145);
+}
+
+.listing:hover > :not(:hover){
+    opacity: 0.4}
+
+.listing{
+    padding: 10px;
+    margin: 10px;
+}
+
+.feature{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: background-color 0.75s ease;
+}
+
+.feature:hover{
+    background-color: rgb(197, 174, 145);
+}
+
+.hero-cta{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: opacity, background-color 0.75s ease;
+}
+
+.hero-cta:hover{
+    background-color: rgb(197, 174, 145);
+}
+
+.hero-feature{
+    padding:10px;
+    border-radius: 20px;
+    transition: opacity, background-color 0.75s ease;
+}
+.hero-feature:hover{
+    background-color: rgb(197, 174, 145);
+}
+
+.sidebar{
+    background-color: rgba(67, 97, 54, 255);
+    border-radius: 20px;
+    transition: opacity 0.75s ease;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sidebar-feature{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sidebar-highlight{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.75s ease;
+}
+
+.sidebar-highlight:hover{
+    background-color: rgb(98, 125, 87);
+
+}
+
+td{
+    width: 50%
+}
+
+.img-promo1{
+    max-width:100%;
+    animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+    0%, 1% {
+        opacity: 1;
+    }
+    5%, 10% {
+        opacity: 0.25;
+    }
+    15%, 20% {
+        opacity: 1;
+    }
+    25%, 30% {
+        opacity: 0.25;
+    }
+    35%, 100% {
+        opacity: 1;
+    }
+}
