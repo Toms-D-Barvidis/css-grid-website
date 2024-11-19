@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(65, 45, 25, 255);
+    background-color: rgb(65, 45, 25);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -13,7 +13,7 @@ h1{
 }
 
 .header {
-    background-color: rgba(67, 97, 54, 255);
+    background-color: rgb(67, 97, 54);
 }
 
 .global-nav{
@@ -25,7 +25,7 @@ h1{
 }
 
 .hero {
-    background-color: rgba(168, 135, 93, 255);
+    background-color: rgb(168, 135, 93);
     margin: 10px;
     border-radius: 20px;;
 }
@@ -36,14 +36,14 @@ h1{
 
 
 .body {
-    background-color: rgba(168, 135, 93, 255);
+    background-color: rgb(168, 135, 93);
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .footer {
-    background: rgba(67, 97, 54, 255);
+    background: rgb(67, 97, 54);
     margin-top: 20px;
     padding: 20px;
 }
@@ -127,7 +127,7 @@ h1{
 }
 
 .sidebar{
-    background-color: rgba(67, 97, 54, 255);
+    background-color: rgb(67, 97, 54);
     border-radius: 20px;
     transition: opacity 0.75s ease;
     display: flex;
