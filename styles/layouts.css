@@ -16,6 +16,10 @@
     grid-area: tools
 }
 
+.toolbox:hover > :not(:hover){
+    opacity: 0.5;
+}
+
 
 /* Hero Section */
 
@@ -83,7 +87,36 @@
     }
     .promo3{
         display:grid;
+        overflow: hidden;
+        }
+    .transparent-band{
+        position: relative;
+        height: 30px;
+        top: -110px;
+        background-color: rgba(227, 200, 142, 0.655);
+        color: rgba(240, 248, 255, 0);    
     }
+    .slider{
+        position: relative;
+        top: -75px;
+        z-index: 1;
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        white-space: nowrap;
+        /* left: 100%; */
+        animation: slideleft 10s linear infinite
+    }
+
+    @keyframes slideleft {
+        0% {
+            left: 100%;
+        }
+        100% {
+            left: -100%
+        }
+        
+    }
+
     .hero-feature{
         display: none;
     }
@@ -93,6 +126,42 @@
             "brand brand"
             "global-nav tools"
     }
+    .brand * {
+        display: flex;
+        justify-content: center;
+    }
+    .global-nav{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .tools{
+        display: flex;
+        justify-content: center;
+    }
+    .toolbox{
+        display: flex;
+        margin-right: 10px;
+        margin-bottom: 5%;
+    }
+    .tooltext{
+        display: flex;
+        justify-content: center;
+        margin-right: 1%;
+        padding-right: 2%;
+        padding-left: 2%;
+        border-radius: 20px;
+        transition: opacity 0.75s ease;
+        cursor: pointer;
+    }
+    .tooltext > span {
+        display: none;
+    }
+    .tooltext > img{
+        width: 50px;
+    }
+
     .hero{
         display:grid;
         grid-template-areas: "hero-cta";
@@ -114,7 +183,6 @@
 @media (min-width: 576px){
     body{
         display:grid;
-        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "header"
@@ -125,7 +193,9 @@
     }
     .header{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "brand global-nav tools";
+        align-items: center;
     }
     .promo1{
         display: none;
@@ -147,6 +217,29 @@
         margin-right: 10px;
         margin-top: 10px;
     }
+    .tools{
+        margin-right: 10%;
+        }
+    .toolbox{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-content: center;
+    }
+    .tooltext{
+        display: flex;
+        margin-right: 3%;
+        padding: 5px;
+        padding-top: 5px;
+        border-radius: 10px;
+        transition: 0.75s ease;
+        cursor: pointer;
+        }
+    .tooltext:not(:hover) {
+        span {
+            display: none;
+        }
+        }
 }
 
 /* Desktop layout */
@@ -175,7 +268,27 @@
         display:grid;
         grid-template-areas: "feature listing listing";
     }
-    
+    .toolbox{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .tooltext{
+        display: flex;
+        align-content: center;
+        padding: 10px;
+        padding-top: 10px;
+        border-radius: 15px;
+        transition: 0.75s ease;
+        cursor:pointer;
+    }
+    .tooltext:not(:hover) {
+        span {
+            display: none;
+        }
+        padding: 5px;
+        padding-top: 12px;
+    }
+
     .promo1{
         display:grid;
     }

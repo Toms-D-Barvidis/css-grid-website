@@ -1,5 +1,10 @@
 body{
     background-color: rgba(65, 45, 25, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-size: xx-large;
 }
 
 .coa{
@@ -14,6 +19,10 @@ body{
 
 .global-nav{
     width: 100%;
+}
+
+.tooltext{
+    background-color: rgb(168, 135, 93);
 }
 
 .hero {
@@ -46,6 +55,14 @@ body{
 }
 
 .promo2{
+    display: grid;
+    background-color: rgb(85, 43, 132);
+    align-items: center;
+}
+
+.sidebanner{
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 
 .promo3{
@@ -150,16 +167,16 @@ td{
     0%, 1% {
         opacity: 1;
     }
-    5%, 10% {
-        opacity: 0.25;
+    2%, 3% {
+        opacity: 0.75;
     }
-    15%, 20% {
+    4%, 10% {
         opacity: 1;
     }
-    25%, 30% {
-        opacity: 0.25;
+    11%, 12% {
+        opacity: 0.75;
     }
-    35%, 100% {
+    13%, 100% {
         opacity: 1;
     }
 }
